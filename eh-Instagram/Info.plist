@@ -4,6 +4,20 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>eh-instagram.herokuapp.com</key>
+			<dict/>
+			<key>NSThirdPartyExceptionRequiresForwardSecrecey</key>
+			<false/>
+			<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+			<key>NSIncludesSubdomains</key>
+			<true/>
+		</dict>
+	</dict>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
