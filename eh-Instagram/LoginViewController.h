@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (IBAction)LoginButton:(id)sender;
 
 - (IBAction)SignUpTapButton:(id)sender;
+
 @end
 
 NS_ASSUME_NONNULL_END

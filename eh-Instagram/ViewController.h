@@ -8,13 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 - (IBAction)CreateAccountButton:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *SignInTapButton;
-
-
 @end
 
