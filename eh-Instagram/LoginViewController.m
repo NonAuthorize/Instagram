@@ -22,15 +22,28 @@
 }
 
 - (void)loginUser {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Login Error"
+                                                                   message:@""
+                                                            preferredStyle:(UIAlertControllerStyleAlert)];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel"
+                                                           style:UIAlertActionStyleCancel
+                                                         handler:^(UIAlertAction * _Nonnull action) {
+                                                             // handle cancel response here. Doing nothing will dismiss the view.
+                                                         }];
+    [alert addAction:cancelAction];
     NSString *username = self.usernameField.text;
     NSString *password = self.passwordField.text;
     
     [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser * user, NSError *  error) {
         if (error != nil) {
             NSLog(@"User log in failed: %@", error.localizedDescription);
+            alert.message = ((void)("Error: %@"), error.localizedDescription);
+            [self presentViewController:alert animated:YES completion:^ {
+            }];
         } else {
             NSLog(@"User logged in successfully");
-            
+            [self performSegueWithIdentifier:@"loginSegue" sender:nil];
+
             // display view controller that needs to shown after successful login
         }
     }];
@@ -51,6 +64,6 @@
 }
 
 - (IBAction)SignUpTapButton:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+//    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

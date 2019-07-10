@@ -20,11 +20,6 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)logOut {
-    [PFUser logOutInBackgroundWithBlock:^(NSError * _Nullable error) {
-        // PFUser.current() will now be nil
-    }];
-}
 
 /*
 #pragma mark - Navigation
@@ -36,4 +31,12 @@
 }
 */
 
+- (IBAction)LogOutUser:(id)sender {
+    [PFUser logOutInBackgroundWithBlock:^(NSError * _Nullable error) {
+        // PFUser.current() will now be nil
+        [self performSegueWithIdentifier:@"loginSegue" sender:nil];
+
+    }];
+
+}
 @end

@@ -10,7 +10,7 @@
 		9E682BD42145CB9A0C0D1974 /* Pods_eh_InstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A799E941553B173508FE5FB8 /* Pods_eh_InstagramTests.framework */; };
 		AD2F614F24FC74674468E3EC /* Pods_eh_InstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688F7F2F3A262D37A2EF261F /* Pods_eh_InstagramUITests.framework */; };
 		B025B9A922D3FB9500EB7228 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B025B9A822D3FB9500EB7228 /* AppDelegate.m */; };
-		B025B9AC22D3FB9500EB7228 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B025B9AB22D3FB9500EB7228 /* ViewController.m */; };
+		B025B9AC22D3FB9500EB7228 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B025B9AB22D3FB9500EB7228 /* SignUpViewController.m */; };
 		B025B9AF22D3FB9500EB7228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B025B9AD22D3FB9500EB7228 /* Main.storyboard */; };
 		B025B9B122D3FB9600EB7228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B025B9B022D3FB9600EB7228 /* Assets.xcassets */; };
 		B025B9B422D3FB9600EB7228 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B025B9B222D3FB9600EB7228 /* LaunchScreen.storyboard */; };
@@ -50,8 +50,8 @@
 		B025B9A422D3FB9500EB7228 /* eh-Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eh-Instagram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B025B9A722D3FB9500EB7228 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B025B9A822D3FB9500EB7228 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B025B9AA22D3FB9500EB7228 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B025B9AB22D3FB9500EB7228 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B025B9AA22D3FB9500EB7228 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		B025B9AB22D3FB9500EB7228 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		B025B9AE22D3FB9500EB7228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B025B9B022D3FB9600EB7228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B025B9B322D3FB9600EB7228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -149,8 +149,8 @@
 			children = (
 				B025B9A722D3FB9500EB7228 /* AppDelegate.h */,
 				B025B9A822D3FB9500EB7228 /* AppDelegate.m */,
-				B025B9AA22D3FB9500EB7228 /* ViewController.h */,
-				B025B9AB22D3FB9500EB7228 /* ViewController.m */,
+				B025B9AA22D3FB9500EB7228 /* SignUpViewController.h */,
+				B025B9AB22D3FB9500EB7228 /* SignUpViewController.m */,
 				B025B9AD22D3FB9500EB7228 /* Main.storyboard */,
 				B025B9B022D3FB9600EB7228 /* Assets.xcassets */,
 				B025B9B222D3FB9600EB7228 /* LaunchScreen.storyboard */,
@@ -403,7 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0A819DA22D53B0400998CA4 /* LoginViewController.m in Sources */,
-				B025B9AC22D3FB9500EB7228 /* ViewController.m in Sources */,
+				B025B9AC22D3FB9500EB7228 /* SignUpViewController.m in Sources */,
 				B0A819DD22D55C4500998CA4 /* HomePageViewController.m in Sources */,
 				B025B9B722D3FB9600EB7228 /* main.m in Sources */,
 				B025B9A922D3FB9500EB7228 /* AppDelegate.m in Sources */,
