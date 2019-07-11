@@ -23,6 +23,12 @@
         configuration.server = @"https://eh-instagram.herokuapp.com/parse";
     }];
     [Parse initializeWithConfiguration:config];
+    if (PFUser.currentUser) {
+        NSLog(@"Current User Logged in");
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"HomePageNavController"];
+    }
     return YES;
 }
 

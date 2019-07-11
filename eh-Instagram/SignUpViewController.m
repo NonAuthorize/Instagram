@@ -74,4 +74,9 @@
 - (IBAction)CreateAccountButton:(id)sender {
     [self registerUser];
 }
+
+- (IBAction)SignInButtpn:(id)sender {
+    [self dismissViewControllerAnimated:TRUE completion:nil];
+}
+
 @end

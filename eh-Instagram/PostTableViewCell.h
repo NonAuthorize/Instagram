@@ -1,8 +1,8 @@
 //
-//  HomePageViewController.h
+//  PostTableViewCell.h
 //  eh-Instagram
 //
-//  Created by unauthorize on 7/9/19.
+//  Created by unauthorize on 7/11/19.
 //  Copyright © 2019 unauthorize. All rights reserved.
 //
 
@@ -10,9 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomePageViewController : UIViewController
+@interface PostTableViewCell : UITableViewCell
 
-- (IBAction)CameraButton:(id)sender;
 
 
 @end

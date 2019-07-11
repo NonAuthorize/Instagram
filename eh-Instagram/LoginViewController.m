@@ -63,7 +63,10 @@
     [self loginUser];
 }
 
-- (IBAction)SignUpTapButton:(id)sender {
-//    [self dismissViewControllerAnimated:YES completion:nil];
+- (IBAction)SignUpButton:(id)sender {
+    [self dismissViewControllerAnimated:TRUE completion:nil];
+
 }
+
+
 @end
