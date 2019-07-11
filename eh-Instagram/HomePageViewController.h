@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HomePageViewController : UIViewController
-- (IBAction)LogOutUser:(id)sender;
+
+
 
 @end
 

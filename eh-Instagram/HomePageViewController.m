@@ -6,8 +6,10 @@
 //  Copyright © 2019 unauthorize. All rights reserved.
 //
 
+#import "LoginViewController.h"
 #import "HomePageViewController.h"
 #import "Parse/Parse.h"
+#import "AppDelegate.h"
 
 @interface HomePageViewController ()
 
@@ -31,12 +33,12 @@
 }
 */
 
-- (IBAction)LogOutUser:(id)sender {
-    [PFUser logOutInBackgroundWithBlock:^(NSError * _Nullable error) {
-        // PFUser.current() will now be nil
-        [self performSegueWithIdentifier:@"loginSegue" sender:nil];
-
-    }];
-
+- (IBAction)tappedLogout:(id)sender {
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    LoginViewController *loginViewController = [storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+    appDelegate.window.rootViewController = loginViewController;
 }
+
 @end
