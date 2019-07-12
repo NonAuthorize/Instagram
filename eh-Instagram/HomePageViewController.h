@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PostViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomePageViewController : UIViewController
+@interface HomePageViewController : UIViewController <PostViewControllerDelegate, UITableViewDelegate, UITableViewDataSource>
 
 - (IBAction)CameraButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 
 @end

@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Post.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PostViewController : UIViewController 
+@protocol PostViewControllerDelegate
+
+-(void) postButton:(Post *)post;
+
+@end
+
+@interface PostViewController : UIViewController <UIImagePickerControllerDelegate>
 - (IBAction)CancelButton:(id)sender;
 - (IBAction)postButton:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *captionField;

@@ -66,13 +66,15 @@
     //UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
     UIImage *editedImage = info[UIImagePickerControllerEditedImage];
     
-    self.editedImage = [self resizeImage:editedImage withSize:CGSizeMake(400, 400)];
+    // self.editedImage = [self resizeImage:editedImage withSize:CGSizeMake(400, 400)];
     
     // Do something with the images (based on your use case)
     
     
     // [self.imageUploadView setImage:self.editedImage];
     self.imageUploadView.image = editedImage; //self.editedImage;
+    self.imageUploadView.image = [self resizeImage:editedImage withSize:CGSizeMake(400, 400)];
+
     NSLog(@"Image should upload");
     // Dismiss UIImagePickerController to go back to your original view controller
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -93,7 +95,7 @@
 }
 
 - (IBAction)postButton:(id)sender {
-    [Post postUserImage:self.editedImage withCaption:self.captionField.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
+    [Post postUserImage:self.imageUploadView.image withCaption:self.captionField.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
         if (error) {
             NSLog(@"%@", error.localizedDescription);
         } else {
