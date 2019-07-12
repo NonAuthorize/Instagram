@@ -23,6 +23,7 @@
 }
 
 
+
 /*
 #pragma mark - Navigation
 
@@ -43,5 +44,10 @@
 
 - (IBAction)CameraButton:(id)sender {
     [self performSegueWithIdentifier:@"ComposeSegue" sender:nil];
+}
+- (IBAction)likeButton:(id)sender {
+}
+
+- (IBAction)commentButton:(id)sender {
 }
 @end
