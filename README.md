@@ -46,9 +46,17 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/4axS4zl' title='Video Walkthrough Part 1' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with [EZGif](https://ezgif.com).
+
+## Video Walkthrough Cont.
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://imgur.com/uXk2ivA' title='Video Walkthrough Part 2' width'' alt='Video Walkthrough' />
+
+GIF created with [EZGif] (https://ezgif.com).
 
 ## Credits
 
@@ -61,6 +69,7 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 
 Describe any challenges encountered while building the app.
 I had troubles with the cell displaying any content at first and required a remake of files and objects from the library.
+Also, Please note, that during the screen record, my internet connection was not at it's finest and took a while to reach the servers for logging in and creating posts. 
 
 ## License
 
