@@ -46,17 +46,9 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/4axS4zl' title='Video Walkthrough Part 1' width='' alt='Video Walkthrough' />
+https://imgur.com/a/lQJIJkT
 
-GIF created with [EZGif](https://ezgif.com).
-
-## Video Walkthrough Cont.
-
-Here's a walkthrough of implemented user stories:
-
-<img src='https://imgur.com/uXk2ivA' title='Video Walkthrough Part 2' width'' alt='Video Walkthrough' />
-
-GIF created with [EZGif] (https://ezgif.com).
+Videos hosted by Imgur 
 
 ## Credits
 
